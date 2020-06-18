@@ -26,8 +26,7 @@
 - Node.js
 - MySQL DB
 
-##Group Project
-
+## Group Project
 https://github.com/alfa9317/Project2
 
 ## App Link
