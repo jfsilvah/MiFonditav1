@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Link for the icons in Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel= "stylesheet" href= "styles\styles.css">
+    <title> Mi Fondita - Menu </title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <div id="navBar">
+        <nav class=" pink darken-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"><img src="./images/miFonditaLogo.png" style="width: 160px; height: auto;margin-top: 2px;"></a>
+                    <a href="#" class="sidenav-trigger" data-target="slide_out_1"><i class="material-icons">menu</i></a>
+                    <ul class="hide-on-med-and-down right">
+                        <li><a href="/orders">Pedidos</a></li>
+                        <li><a href="/">Salir</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <h3> ¿Qué se te antoja hoy?</h3>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Containers para los elementos del menu -->
+        <div class="container" id="foodContainer">
+            <!-- Fotos de las entradas -->
+            <p> ¿Con qué quieres empezar?</p>
+            <div class="row">
+                <div class="col s3" > <span class="foodName" data-foodId="entrada1"> Sopa de Fideo </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="entrada2"> Consomé de pollo </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="entrada3"> Crema de verduras </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="entrada4"> Lentejas </span> </div>           
+            </div> 
+            <div class="row">
+                <div class="col s3" > <img src="test images/sopa-de-fideos-a-los-tres-chiles.jpg" class="circle imgMenu " data-foodId="entrada1"></a> </div>
+                <div class="col s3" > <img src="test images/Consomé-de-pollo-para-dieta-640x427.jpg" class="circle imgMenu" data-foodId="entrada2"></a> </div>
+                <div class="col s3" > <img src="test images/receta-de-crema-de-verduras-al-curry-655x368.jpg" class="circle imgMenu" data-foodId="entrada3"></a> </div>
+                <div class="col s3" > <img src="test images/receta-facil-de-sopa-de-lentejas-con-tocino.jpg" class="circle imgMenu" data-foodId="entrada4"></a> </div>           
+            </div> 
+        </div>
+
+        <div class="container" id="foodContainer">
+            <!-- Fotos de las guarniciones -->
+            
+            <p> Elige alguna de nuestras guarniciones </p>
+            <div class="row">
+                <div class="col s3" > <span class="foodName" data-foodId="guarnicion1"> Arroz a la mexicana </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="guarnicion2"> Spaguetti rojo </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="guarnicion3"> Ensalada de Lechuga </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="guarnicion4"> Frijoles charros </span> </div>           
+            </div> 
+            <div class="row">
+                <div class="col s3" > <img src="test images/Arroz_a_la_Mexicana_Recipes_800x800.jpg" class="circle imgMenu" data-foodId="guarnicion1"></a> </div>
+                <div class="col s3" > <img src="test images/spaguetti_rojo.jpg" class="circle imgMenu" data-foodId="guarnicion2"></a> </div>
+                <div class="col s3" > <img src="test images/5600-2-ensalada-de-lechugas-variadas-pepino-y-tomates-cherry-xl-668x400x80xX.jpg" class="circle imgMenu" data-foodId="guarnicion3"></a> </div>
+                <div class="col s3" > <img src="test images/frijoles-charros-1-1024x714.jpg" class="circle imgMenu" data-foodId="guarnicion4"></a> </div>           
+            </div> 
+        </div>
+
+        <div class="container" id="foodContainer">
+            <!-- Fotos de los platos fuertes -->
+            <p> ¿Ya te decidiste por un platillo? </p>
+            <div class="row">
+                <div class="col s3" > <span class="foodName" data-foodId="platillo1"> Albondigas de res </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="platillo2"> Tortitas de pollo </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="platillo3"> Pescado empanizado </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="platillo4"> Alambre de champiñones </span> </div>           
+            </div>
+            <div class="row">
+                <div class="col s3" > <img src="test images/albondigas-de-res-en-salsa-de-tomate-y-chipotle-video-e1562345363262.jpg" class="circle imgMenu" data-foodId="platillo1"></a> </div>
+                <div class="col s3" > <img src="test images/tortitas-de-poro-con-pollo-566x440.jpg" class="circle imgMenu" data-foodId="platillo2"></a> </div>
+                <div class="col s3" > <img src="test images/pescado_empanizado_con_amaranto.jpg" class="circle imgMenu" data-foodId="platillo3"></a> </div>
+                <div class="col s3" > <img src="test images/alambre de champiñones.jpg" class="circle imgMenu" data-foodId="platillo4"></a> </div>           
+            </div> 
+        </div>
+
+        <div class="container" id="foodContainer">
+            <!-- Fotos de los postres -->
+            <p> Lo más dulce al final </p>
+            <div class="row">
+                <div class="col s3" > <span class="foodName" data-foodId="postre1"> Fresas con Crema </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="postre2"> Pay de limón </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="postre3"> Gelatina </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="postre4"> Tapioca </span> </div>         
+            </div> 
+            <div class="row">
+                <div class="col s3" > <img src="test images/fresas-con-crema-batida-y-merengue.jpg" class="circle imgMenu" data-foodId="postre1"></a> </div>
+                <div class="col s3" > <img src="test images/carlota de limon.jpg" class="circle imgMenu" data-foodId="postre2"></a> </div>
+                <div class="col s3" > <img src="test images/gelatina-con-tutti-frutti.jpg" class="circle imgMenu" data-foodId="postre3"></a> </div>
+                <div class="col s3" > <img src="test images/tapioca.jpg" class="circle imgMenu" data-foodId="postre4"></a> </div>           
+            </div> 
+        </div>
+
+        <div class="container" id="foodContainer">
+            <!-- Fotos de las bebidas -->
+            <p> No te olvides de tu bebida </p>
+            <div class="row">
+                <div class="col s3" > <span class="foodName" data-foodId="bebida1"> Agua de jamaica </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="bebida2"> Agua de limón </span></div>
+                <div class="col s3" > <span class="foodName" data-foodId="bebida3"> Agua de horchata </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="bebida4"> Agua de tamarindo </span> </div>           
+            </div> 
+            <div class="row">
+                <div class="col s3" > <img src="test images/agua_jamaica.jpg" class="circle imgMenu" data-foodId="bebida1"></a> </div>
+                <div class="col s3" > <img src="test images/comohaceraguadelimon.jpg" class="circle imgMenu" data-foodId="bebida2"></a> </div>
+                <div class="col s3" > <img src="test images/agua-horchata.jpg" class="circle imgMenu" data-foodId="bebida3"></a> </div>
+                <div class="col s3" > <img src="test images/agua-de-tamarindo.jpg" class="circle imgMenu" data-foodId="bebida4"></a> </div>           
+            </div> 
+        </div>
+
+        <div class="container" id="foodContainer">
+            <!-- Fotos de los complementos -->
+            <p> ¿Necesitas algo más? </p>
+            <div class="row">
+                <div class="col s3" > <span class="foodName" data-foodId="complemento1"> Pan </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="complemento2"> Tortillas </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="complemento3"> Cubiertos </span> </div>
+                <div class="col s3" > <span class="foodName" data-foodId="complemento4"> Limón </span> </div>           
+            </div> 
+            <div class="row">
+                <div class="col s3" > <img src="test images/pan_blanco.jpg" class="circle imgMenu" data-foodId="complemento1"></a> </div>
+                <div class="col s3" > <img src="test images/tortillas_de_maiz.jpg" class="circle imgMenu" data-foodId="complemento2"></a> </div>
+                <div class="col s3" > <img src="test images/Cubiertos.jpg" class="circle imgMenu" data-foodId="complemento3"></a> </div>
+                <div class="col s3" > <img src="test images/limon.jpg" class="circle imgMenu" data-foodId="complemento4"></a> </div>           
+            </div> 
+        </div>
+
+        <br>
+
+        <!-- Container para el boton de Submit order -->
+        <div class="container" id="foodContainer">
+            <a id= "submitOrderBtn" class="waves-effect waves-light btn-large"><i class="material-icons right">local_dining</i> Mi orden esta lista </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/functionality.js"></script>
+
+</body>
+
+</html>

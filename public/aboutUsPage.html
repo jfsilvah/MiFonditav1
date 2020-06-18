@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Link for the icons in Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel= "stylesheet" href= "styles\styles.css">
+    <title> AppName - About Us </title>
+</head>
+<body>
+    
+        <!-- navbar -->
+    <div id="navBar">
+        <nav class=" pink darken-1">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"><img src="./images/miFonditaLogo.png" style="width: 160px; height: auto;margin-top: 2px;"></a>
+                    <a href="#" class="sidenav-trigger" data-target="slide_out_1"><i class="material-icons">menu</i></a>
+                    <ul class="hide-on-med-and-down right">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/orders">Pedidos</a></li>
+                        <li class="active"><a href="/about-us">Sobre nosotros</a></li>
+                        <li>
+                            <a href="#" data-target="slide_out_2" class="sidenav-trigger show-on-large">
+                                <img id = "navBarUserImage" class="circle" src="./images/placeholderUser.jpg" style="width: 35px; height: 35px;margin-top: 15px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!-- Primary side bar -->
+<ul id="slide_out_1" class="sidenav">
+    <li><div class="user-view">
+    <div class="background">
+        <img src="./images/sidenav_background.jpeg">
+    </div>
+    <a href="#user"><img id = "sideBarUserImage1" class="circle" src="./images/placeholderUser.jpg"></a>
+    <a href="#name"><span id = "sideBarUserName2" class="white-text name">Martín Sosa Rodríguez</span></a>
+    <a href="#email"><span class="white-text email">martinsr@gmail.com</span></a>
+    <a href="#phone"><span class="white-text phone">5556532435</span></a>
+    <p style="font-size: 16px;color: blanchedalmond;">Av.Insurgentes Sur 1602, Mosqueta 66, Crédito Constructor, Benito Juárez, 03940 Ciudad de México, CDMX</p>
+    </div></li>
+    <li><a><i class="material-icons">home</i>Inicio</a></li>
+    <li><a><i class="material-icons">list</i>Pedidos</a></li>
+    <li class="active"><a><i class="material-icons">pan_tool</i>Sobre nosotros</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="" id = "edit-button"><i class="material-icons">edit</i>Editar información</a></li>
+</ul>
+
+    <!-- Secondary side bar -->
+    <ul id="slide_out_2" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="./images/sidenav_background.jpeg">
+          </div>
+          <a href="#user"><img id = "sideBarUserImage2" class="circle" src="./images/placeholderUser.jpg"></a>
+          <a href="#name"><span id = "sideBarUserName2" class="white-text name">Martín Sosa Rodríguez</span></a>
+          <a href="#email"><span class="white-text email">martinsr@gmail.com</span></a>
+          <a href="#phone"><span class="white-text phone">5556532435</span></a>
+          <p style="font-size: 16px;color: blanchedalmond;">Av.Insurgentes Sur 1602, Mosqueta 66, Crédito Constructor, Benito Juárez, 03940 Ciudad de México, CDMX</p>
+        </div></li>
+        <li><a class="waves-effect" href="" id = "edit-button"><i class="material-icons">edit</i>Editar información</a></li>
+        <li><div class="divider"></div></li>
+    </ul>
+
+
+    <div class="container">
+
+        <!-- Container para la información sobre nosotros, FAQ's y para contactarnos -->
+        <div class="container">
+                <div class="row">
+                    <h1> Sobre nosotros </h1>
+                    <br>
+                    <p> En Mi Fondita Express sabemos lo deliciosa que es la comida casera y lo difícil que puede ser encontrarla 
+                        cuando estamos fuera de nuestros hogares, así que nosotros la ponemos al alcance de un click. </p>
+                    <br>
+                    <p> Somos un servicio que entrega comidas completas, personalizadas, a precios accesibles y con un 
+                        costo de envío mínimo para que lleguen a tu oficina o domicilio. </p>
+                </div>
+
+                <div class="row">
+                    <h3> Preguntas Frecuentes </h3>
+                    <br>
+                    <h5> ¿Cómo funciona AppName?</h5>
+                    <p> Regístrate en nuestro sitio, arma tu paquete de comida y envía tu orden; 
+                        después enviaremos a alguno de nuestros repartidores a entregar tu pedido a la dirección 
+                        principal que nos hayas proporcionado  </p>
+                    <h5>¿Cuál es el costo de los desayunos, comidas y cenas?</h5>
+                    <p> En AppName creemos que una comida deli no tiene por qué ser carísima, todos nuestros paquetes 
+                        de desayuno, comida y cena tienen un costo de $60 mxn y se pagan en efectivo a nuestros repartidores 
+                        una vez te entreguen tu pedido </p>
+                    <h5>¿Qué es lo que incluyen sus paquetes de comida?</h5>
+                    <p> Todos nuestros paquetes incluyen entrada, plato fuerte, guarnición postre y bebida; nuestro menú cambia diaramente 
+                        y puedes armar el paquete que más se te antoje </p>
+                    <h5>¿En qué horarios se realizan los pedidos y las entregas?</h5>
+                    <p> Answer answer answer answer answer answer answer </p>
+                    <h5>¿Puedo cancelar o cambiar mi pedido?</h5>
+                    <p> Answer answer answer answer answer answer answer  </p>
+                    <h5>¿Cómo cambio la dirección de entrega de mi pedido?</h5>
+                    <p> ¿te cambiaste de casa o de trabajo? puedes editar tus direcciones principal y secundaria directamente en tu perfil. 
+                        Es posible cambiar la dirección de entrega únicamente en los primeros 15 minutos después de enviada tu orden, 
+                        sin embargo tiene un costo extra. </p>             
+                </div>  
+                
+                <div class="row">
+                    <h3> Contáctanos</h3>
+                    <br>
+                    <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="first_name" type="text" class="validate">
+                              <label for="first_name" class="active"> Nombre </label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name" class="active"> Apellido </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1" class="active"> Escribe tu mensaje aquí </label>
+                            </div>
+                            <div>
+                              <a class="waves-effect waves-light btn"><i class="material-icons right">message</i> Enviar </a>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+
+        <br>
+        <br>
+
+      <!-- link a jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- link a js -->
+    <!-- <script type="text/javascript" src="assets/javascript/logic.js"></script> -->
+    <!-- link to js MATERIALIZE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/99d86a1013.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('#slide_out_1').sidenav({ edge: 'left' });
+            $('#slide_out_2').sidenav({ edge: 'right' });
+        });
+        
+    </script>      
+
+</body>
+</html>

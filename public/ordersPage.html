@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Mi Fondita - Pedidos </title>
+
+    <!-- link a css -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <!-- link a bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link to css MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alef|Bangers|Chakra+Petch|Monoton|Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- navbar -->
+<div id="navBar">
+    <nav class=" pink darken-1">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="#" class="brand-logo"><img src="./images/miFonditaLogo.png" style="width: 160px; height: auto;margin-top: 2px;"></a>
+                <a href="#" class="sidenav-trigger" data-target="slide_out_1"><i class="material-icons">menu</i></a>
+                <ul class="hide-on-med-and-down right">
+                    <li><a href="/">Inicio</a></li>
+                    <li class="active"><a href="/orders">Pedidos</a></li>
+                    <li><a href="/about-us">Sobre nosotros</a></li>
+                    <li>
+                        <a href="#" data-target="slide_out_2" class="sidenav-trigger show-on-large">
+                            <img id = "navBarUserImage" class="circle" src="./images/placeholderUser.jpg" style="width: 35px; height: 35px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Primary side bar -->
+<ul id="slide_out_1" class="sidenav">
+    <li><div class="user-view">
+    <div class="background">
+        <img src="./images/sidenav_background.jpeg">
+    </div>
+    <a href="#user"><img id = "sideBarUserImage1" class="circle" src="./images/placeholderUser.jpg"></a>
+    <a href="#name"><span id = "sideBarUserName2" class="white-text name">Martín Sosa Rodríguez</span></a>
+    <a href="#email"><span class="white-text email">martinsr@gmail.com</span></a>
+    <a href="#phone"><span class="white-text phone">5556532435</span></a>
+    <p style="font-size: 16px;color: blanchedalmond;">Av.Insurgentes Sur 1602, Mosqueta 66, Crédito Constructor, Benito Juárez, 03940 Ciudad de México, CDMX</p>
+    </div></li>
+    <li><a><i class="material-icons">home</i>Inicio</a></li>
+    <li class="active"><a><i class="material-icons">list</i>Pedidos</a></li>
+    <li><a><i class="material-icons">pan_tool</i>Sobre nosotros</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="" id = "edit-button"><i class="material-icons">edit</i>Editar información</a></li>
+</ul>
+
+    <!-- Secondary side bar -->
+    <ul id="slide_out_2" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="./images/sidenav_background.jpeg">
+          </div>
+          <a href="#user"><img id = "sideBarUserImage2" class="circle" src="./images/placeholderUser.jpg"></a>
+          <a href="#name"><span id = "sideBarUserName2" class="white-text name">Martín Sosa Rodríguez</span></a>
+          <a href="#email"><span class="white-text email">martinsr@gmail.com</span></a>
+          <a href="#phone"><span class="white-text phone">5556532435</span></a>
+          <p style="font-size: 16px;color: blanchedalmond;">Av.Insurgentes Sur 1602, Mosqueta 66, Crédito Constructor, Benito Juárez, 03940 Ciudad de México, CDMX</p>
+        </div></li>
+        <li><a class="waves-effect" href="" id = "edit-button"><i class="material-icons">edit</i>Editar información</a></li>
+        <li><div class="divider"></div></li>
+    </ul>
+
+    <!-- Cards -->
+<div class="container" id="mainContainer" style="margin-top: 100px;">
+    
+</div>
+
+<!-- link a jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<!-- link a js -->
+<!-- <script type="text/javascript" src="assets/javascript/logic.js"></script> -->
+<!-- link to js MATERIALIZE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://kit.fontawesome.com/99d86a1013.js"></script>
+
+<script>
+
+    function ordersHead(){
+        $.ajax({ url: "/api/orders", method: "GET" })
+      .then(function(orderData) {
+
+        console.log(orderData);
+        console.log("------------------------------------");
+        var orderDate = "17th March"
+        var orderNum = "1"
+        var orderStatus = "Entregado"
+        var orderPrice = "45"
+
+        if(orderData.length!==0){
+            for (var i = 0; i < orderData.length; i++) { 
+                orderDate = orderData[i].OrderDate;
+                orderNum = orderData[i].id;
+                orderStatus = orderData[i].OrderStatus;
+                orderPrice = orderData[i].totalPrice;         
+                var order=
+                    `
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card pink darken-1">
+                                <div class="card-content white-text">
+                                    <div class="card__meta">
+                                        <time>${orderDate}</time>
+                                    </div>
+                                    <span class="card-title"style="font-weight:bold;">Orden #${orderNum}</span>
+                    
+                                    <span>Estatus de la orden: ${orderStatus}</span>
+                                </div>
+                                <div class="card-action">
+                                    <span style="font-weight:bold;">Monto total a pagar: $${orderPrice}</span>
+                                    <a href="/orders/detail" class="card-action-right" style="color: black;font-weight:bold;">Detalle de la orden</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+                    $("#mainContainer").append(order)
+            }
+        }else{
+            alert("No orders in the list");
+        }
+        
+      });
+    }
+
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('#slide_out_1').sidenav({ edge: 'left' });
+        $('#slide_out_2').sidenav({ edge: 'right' });
+        $('.carousel').carousel();
+    });
+
+    ordersHead();
+    
+</script>   
+
+</body>
+</html>

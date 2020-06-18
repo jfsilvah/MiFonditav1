@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Mi Fondita - Registro </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="navBar">
+        <nav class="pink darken-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"><img src="./images/miFonditaLogo.png"
+                            style="width: 160px; height: auto;margin-top: 2px;"></a>
+                    <a href="#" class="sidenav-trigger" data-target="slide_out_1"><i class="material-icons">menu</i></a>
+                    <ul class="hide-on-med-and-down right">
+                        <li><a href="homePage.html">Inicio</a></li>
+                        <li><a href="ordersPage.html">Pedidos</a></li>
+                        <li><a href="aboutUsPage.html">Sobre nosotros</a></li>
+                        <li>
+                            <a href="#" data-target="slide_out_2" class="sidenav-trigger show-on-large">
+                                <img id="navBarUserImage" class="circle" src="./images/placeholderUser.jpg"
+                                    style="width: 35px; height: 35px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+
+        <br><br><br><br>
+        <form id="customerForm">
+            <div class="form-group">
+                <label for="inputName">Nombre del Cliente</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Juan Perez">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="juanperez@outlook.com">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPhone">Telefono</label>
+                    <input type="text" class="form-control" id="inputPhone" placeholder="55 1234 5678">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Direccion</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Av. Reforma">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputExt">Numero Exterior</label>
+                    <input type="text" class="form-control" id="inputExt" placeholder="123">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputInt">Numero Interior</label>
+                    <input type="text" class="form-control" id="inputInt" placeholder="Oficina 3">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputProvince">Colonia</label>
+                    <input type="text" class="form-control" id="inputProvince" placeholder="Centro">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Codigo Postal</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="01200">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCity">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Ciudad de Mexico">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputState">Estado</label>
+                    <input type="text" class="form-control" id="inputState" placeholder="Ciudad de Mexico">
+                </div>
+            </div>
+            <button type="submit" id="registerCustomer" class="btn btn-primary pink darken-2">Registrar</button>
+        </form>
+        <h5 id="messageRes"></h5>
+    </div>
+    <script src="js/registerForm.js" type="text/javascript"></script>
+</body>
