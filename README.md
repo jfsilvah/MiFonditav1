@@ -3,7 +3,7 @@
 ## Overview
 
 * This project is a copy of the original group project where you can check the commit history and the different versions
-* Full Stack application developed with Bootstrap, CSS and Materialize in the front end and Node.js, Express.js and MySQL database
+* Full Stack application developed with Handlebars.js, Bootstrap, CSS and Materialize in the front end and Node.js, Express.js and MySQL database
 * It's a prototype where the app will display different menu options where the customer can select different meals and send the order to be prepared
 * The app will display the status and the recent order's history for the customer
 
@@ -17,6 +17,7 @@
 - CSS3
 - Bootstrap
 - Materialize
+- HandleBars.js
 - Javascript
 - JQuery
 - JSON
