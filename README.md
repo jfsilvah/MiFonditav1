@@ -33,7 +33,8 @@ https://github.com/alfa9317/Project2
 https://warm-ridge-99326.herokuapp.com/
 
 ## Authors
-Lesly Sanchez
-Francisco Silva
-Alejandro Vilchis
-Jose Alfredo Torres
+
+* Lesly Sanchez
+* Francisco Silva
+* Alejandro Vilchis
+* Jose Alfredo Torres
