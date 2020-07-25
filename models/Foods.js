@@ -1,4 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
+
   var Foods = sequelize.define("Foods", {
     FoodName: {
       type: DataTypes.STRING,
