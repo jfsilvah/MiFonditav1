@@ -1,6 +1,7 @@
 var db = require("../models");
 
 module.exports = function(app) {
+
   // Get all Foods
   app.get("/api/foods/:type", function(req, res) {
     // Here we add an "include" property to our options in our findAll query
