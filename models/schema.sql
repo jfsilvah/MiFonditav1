@@ -3,6 +3,7 @@ CREATE DATABASE restaurant_db;
 USE restaurant_db;
 
 INSERT INTO customers (name,street,exterior,interior,zipCode,province,city,state,email,phoneNumber,createdAt,updatedAt) VALUES ('Francisco Silva','Viveros','123','123','03000','Mexico','Mexico','Distrito Federal','test@gmail.com','5555555555',sysdate(),sysdate());
+COMMIT;
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Sopa de Fideo","comida","entrada1",20,"test images/sopa-de-fideos-a-los-tres-chiles.jpg",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("ConsomÈ de pollo","comida","entrada2",20,"test images/ConsomÈ-de-pollo-para-dieta-640x427.jpg",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Crema de verduras","comida","entrada3",20,"test images/receta-de-crema-de-verduras-al-curry-655x368.jpg",sysdate(),sysdate());
@@ -43,6 +44,7 @@ INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt)
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Tortillas","vegetariana","complemento2",0,"test images/tortillas_de_maiz.jpg",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Cubiertos","vegetariana","complemento3",0,"test images/Cubiertos.jpg",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("LimÛn","vegetariana","complemento4",0,"test images/limon.jpg",sysdate(),sysdate());
+COMMIT;
 INSERT INTO orderheaders (OrderStatus,CustomerId,createdAt,updatedAt) values ("Entregado",1,sysdate(),sysdate());
 INSERT INTO orderheaders (OrderStatus,CustomerId,createdAt,updatedAt) values ("Entregado",1,sysdate(),sysdate());
 INSERT INTO orderheaders (OrderStatus,CustomerId,createdAt,updatedAt) values ("Entregado",1,sysdate(),sysdate());
@@ -53,6 +55,7 @@ INSERT INTO orderlines (orderPrice,createdAt,updatedAt,FoodId,OrderHeaderId) val
 INSERT INTO orderlines (orderPrice,createdAt,updatedAt,FoodId,OrderHeaderId) values (45,sysdate(),sysdate(),1,3);
 INSERT INTO orderlines (orderPrice,createdAt,updatedAt,FoodId,OrderHeaderId) values (45,sysdate(),sysdate(),1,4);
 INSERT INTO orderlines (orderPrice,createdAt,updatedAt,FoodId,OrderHeaderId) values (45,sysdate(),sysdate(),1,5);
+COMMIT;
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Chilaquiles","desayuno","platillo1",50,"null",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Sopes","desayuno","platillo2",20,"null",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Ensalada de yogurt","desayuno","platillo3",35,"null",sysdate(),sysdate());
@@ -60,4 +63,4 @@ INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt)
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Pan Francés","desayuno","platillo5",60,"null",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Café","desayuno","bebida1",15,"null",sysdate(),sysdate());
 INSERT INTO foods (FoodName,FoodType,Category,Price,Picture,createdAt,updatedAt) values ("Jugo de naranja","desayuno","bebida2",15,"null",sysdate(),sysdate());
-commit;
+COMMIT;
