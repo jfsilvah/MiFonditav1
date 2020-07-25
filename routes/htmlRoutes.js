@@ -10,6 +10,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/homePage.html"));
   });
 
+
   // Load about us page
   app.get("/about-us", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/aboutUsPage.html"));
