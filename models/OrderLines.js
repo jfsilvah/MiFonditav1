@@ -1,4 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
+
   var OrderLines = sequelize.define("OrderLines", {
     OrderPrice: {
       type: DataTypes.DECIMAL,
