@@ -21,6 +21,7 @@ module.exports = function(app) {
       res.json(dbCustomer);
     });
   });
+
   app.post("/api/newCustomer", function(req, res) {
     db.Customer.findOne({
       where: {
