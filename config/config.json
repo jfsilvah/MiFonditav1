@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Serafin2019",
+    "password": "root",
     "database": "restaurant_db",
     "host": "localhost",
     "dialect": "mysql"
